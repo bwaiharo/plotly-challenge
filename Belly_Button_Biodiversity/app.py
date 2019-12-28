@@ -36,6 +36,14 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
+# @app.route("/test")
+# def test():
+#     results = db.session.query(Gender).statement
+#     df = pd.read_sql_query(stmt, db.session.bind)
+
+#     # Return a list of the column names (sample names)
+#     return jsonify(list(df.columns)[:])
+#     # return jsonify({ "mind": "test"})
 
 @app.route("/names")
 def names():
